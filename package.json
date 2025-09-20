@@ -1,0 +1,35 @@
+{
+  "name": "apeach-electron-app",
+  "version": "1.0.0",
+  "description": "A cute Apeach character Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "build": "electron-builder",
+    "dist": "electron-builder --publish=never"
+  },
+  "keywords": [
+    "electron",
+    "apeach",
+    "kakao",
+    "cute"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^26.6.10",
+    "electron-builder": "^24.0.0"
+  },
+  "build": {
+    "appId": "com.example.apeach",
+    "productName": "Apeach App",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "!node_modules/**/*"
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    http-equiv="Content-Security-Policy"
+    content="default-src 'self'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src https://fonts.gstatic.com;"
+  >
+  <meta
+    http-equiv="X-Content-Security-Policy"
+    content="default-src 'self'; script-src 'self'"
+  />
+  <link rel="stylesheet" href="css/page4.css">
+  <title>make a selfie💕</title>
+</head>
+<body>
+  <header class="header">
+    <button id="backButton2" type="button" aria-label="Go back to menu">Go back</button>
+    <h1>APEACH</h1>
+  </header>
+
+  <main id="main">
+    <div id="loader" role="progressbar" aria-label="Selfie progress">
+      <progress id="p" value="0" max="100" aria-describedby="progress-label"></progress>
+      <output for="p" id="progress-label"></output>
+    </div>
+  
+    <img id="apeach" src="img/page-4.png" alt="Apeach taking a selfie" loading="lazy">
+  </main>
+
+  <div class="watermark" aria-hidden="true">@pry_uchiha</div>
+
+  <script src="js/page4.js"></script>
+</body>
+</html>

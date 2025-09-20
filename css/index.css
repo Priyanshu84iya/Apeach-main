@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+  --primary-color: #F5ACBD;
+  --secondary-color: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Press Start 2P", system-ui;
+}
+
+body {
+  background: var(--primary-color);
+  height: 100vh;
+}
+
+#container__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 40%;
+  gap: 25px;
+  color: var(--secondary-color);
+  letter-spacing: 2px;
+}
+
+#container__top h1 {
+  font-size: 24px;
+}
+
+#container__top h2 {
+  font-size: 12px;
+}
+
+#container__bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 60%;
+  gap: 15px;
+  color: var(--secondary-color);
+  letter-spacing: 2px;
+}
+
+#container__bottom p {
+  font-size: 10px;
+}
+
+.container__bottom__img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#apeach {
+  animation: swing 2s ease-in-out infinite;
+}
+
+@keyframes swing {
+  0% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+  100% { transform: rotate(-2deg); }
+}
+
+#my-button {
+  position: absolute;
+  bottom: 15px;
+  right: -60px;
+  background: var(--primary-color);
+  border: var(--secondary-color) 3px solid;
+  border-radius: 10px;
+  width: 80px;
+  height: 30px;
+  cursor: pointer;
+  color: var(--secondary-color);
+  font-size: 8px;
+  transition: all 0.3s ease;
+}
+
+#my-button:hover,
+#my-button:focus {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  font-weight: bold;
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+#my-button:active {
+  transform: translateY(1px);
+}
+
+/* Instagram Watermark */
+.watermark {
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Press Start 2P", system-ui;
+  z-index: 1000;
+  pointer-events: none;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  letter-spacing: 1px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    http-equiv="Content-Security-Policy"
+    content="default-src 'self'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src https://fonts.gstatic.com;"
+  >
+  <meta
+    http-equiv="X-Content-Security-Policy"
+    content="default-src 'self'; script-src 'self'"
+  />
+  <title>eating💕</title>
+  <link rel="stylesheet" href="css/page3.css">
+</head>
+<body>
+  <header class="header">
+    <button id="backButton" type="button" aria-label="Go back to menu">Go back</button>
+    <h1>APEACH</h1>
+  </header>
+
+  <main id="container">
+    <div id="block" aria-hidden="true"></div>
+    <img id="apeach" src="img/page-3.png" alt="Apeach eating" width="210" height="200" loading="lazy">
+
+    <div id="loader" role="progressbar" aria-label="Eating progress">
+      <progress id="p" value="0" max="100" aria-describedby="progress-label"></progress>
+      <output for="p" id="progress-label"></output>
+    </div>
+  </main>
+
+  <div class="watermark" aria-hidden="true">@pry_uchiha</div>
+
+  <script src="js/page3.js"></script>
+</body>
+</html>

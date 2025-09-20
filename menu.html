@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    http-equiv="Content-Security-Policy"
+    content="default-src 'self'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data:; script-src 'self';"
+  >
+  <meta
+    http-equiv="X-Content-Security-Policy"
+    content="default-src 'self'; script-src 'self'"
+  />
+  <link rel="stylesheet" href="css/menu.css">
+  <title>Apeach Menu💕</title>
+</head>
+<body>
+  <header class="header">
+    <button id="backBtn" type="button" aria-label="Go back to home page">Go back</button>
+    <h1>APEACH</h1>
+  </header>
+
+  <main id="container">
+    <img id="apeach-menu" src="img/home-page1.png" alt="Apeach character in menu" width="210" height="200" loading="lazy">
+
+    <nav id="btn" role="navigation" aria-label="Activity menu">
+      <button id="btn__eating" type="button" aria-label="Start eating activity">eating</button>
+      <button id="btn__make-a-selfie" type="button" aria-label="Start selfie activity">make a selfie</button>
+      <button id="btn__sleeping" type="button" aria-label="Start sleeping activity">sleeping</button>
+      <button id="btn__gift-a-flower" type="button" aria-label="Start flower gift activity">gift a flower</button>
+    </nav>
+  </main>
+
+  <div class="watermark" aria-hidden="true">@pry_uchiha</div>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>
